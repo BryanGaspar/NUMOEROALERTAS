@@ -40,6 +40,7 @@ namespace NUMOEROALERTAS
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtMemo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@ namespace NUMOEROALERTAS
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCalcular.Location = new System.Drawing.Point(298, 400);
+            this.btnCalcular.Location = new System.Drawing.Point(268, 400);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(111, 38);
             this.btnCalcular.TabIndex = 5;
@@ -147,6 +148,20 @@ namespace NUMOEROALERTAS
             this.label3.TabIndex = 12;
             this.label3.Text = "(Opcional)";
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar.Location = new System.Drawing.Point(395, 400);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(111, 38);
+            this.btnCerrar.TabIndex = 13;
+            this.btnCerrar.Text = "CERRAR";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // frmMisionDeCheque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +169,7 @@ namespace NUMOEROALERTAS
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMemo);
             this.Controls.Add(this.pictureBox1);
@@ -164,6 +180,7 @@ namespace NUMOEROALERTAS
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtPagueseAlaOrdenDe);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMisionDeCheque";
             this.Text = "Emisión de cheques";
@@ -185,5 +202,6 @@ namespace NUMOEROALERTAS
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtMemo;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

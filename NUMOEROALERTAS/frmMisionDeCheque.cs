@@ -72,5 +72,10 @@ namespace NUMOEROALERTAS
                 MessageBox.Show("Solo números enteros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
