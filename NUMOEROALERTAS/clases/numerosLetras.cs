@@ -80,7 +80,7 @@ namespace UTILS
                 int residuo = num % 100;
                 if (residuo > 0)
                 {
-                    aux += "ciento " + getDecenas(residuo);
+                    aux += "Ciento " + getDecenas(residuo);
                 }
 
             }
@@ -105,14 +105,14 @@ namespace UTILS
             }
             else if (num == 1000)
             {
-                aux = "mil";
+                aux = "Mil";
             }
             else if (num > 1000 && num <= 999999)
             {
                 int residuo = num % 1000;
                 if (num > 1000 && num < 2000)
                 {
-                    aux = "mil " + getCentenas(residuo);
+                    aux = "Mil " + getCentenas(residuo);
                 }
                 else if (num >= 2000 && num <= 999999)
                 {
@@ -138,7 +138,7 @@ namespace UTILS
                 int residuo = num % 1000000;
                 if (num >= 1000000 && num < 2000000)
                 {
-                    aux = "un millon";
+                    aux = "Un Millon";
                     if (residuo > 0)
                     {
                         aux += " " + getUnidadesMil(residuo);
@@ -146,7 +146,7 @@ namespace UTILS
                 }
                 else if (num > 1000000 && num <= 999999999)
                 {
-                    aux = getUnidadesMil(num / 1000000) + " millones";
+                    aux = getUnidadesMil(num / 1000000) + " Millones";
                     if (residuo > 0)
                     {
                         aux += " " + getUnidadesMil(residuo);
