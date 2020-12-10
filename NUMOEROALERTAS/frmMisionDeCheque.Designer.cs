@@ -77,11 +77,12 @@ namespace NUMOEROALERTAS
             // txtResultados
             // 
             this.txtResultados.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultados.Location = new System.Drawing.Point(45, 217);
+            this.txtResultados.Location = new System.Drawing.Point(48, 221);
             this.txtResultados.Multiline = true;
             this.txtResultados.Name = "txtResultados";
             this.txtResultados.ReadOnly = true;
-            this.txtResultados.Size = new System.Drawing.Size(639, 22);
+            this.txtResultados.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.txtResultados.Size = new System.Drawing.Size(639, 23);
             this.txtResultados.TabIndex = 4;
             this.txtResultados.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -184,6 +185,7 @@ namespace NUMOEROALERTAS
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMisionDeCheque";
             this.Text = "Emisión de cheques";
+            this.Load += new System.EventHandler(this.frmMisionDeCheque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -96,7 +96,7 @@ namespace UTILS
             return aux;
         }
 
-        public static String getUnidadesMil(int num)
+        public static String getMiles(int num)
         {
             String aux = "";
             if (num >= 0 && num < 1000)
@@ -131,7 +131,7 @@ namespace UTILS
             String aux = "";
             if (num >= 0 && num <= 999999)
             {
-                aux = getUnidadesMil(num);
+                aux = getMiles(num);
             }
             else if (num >= 1000000 && num <= 999999999)
             {
@@ -141,17 +141,18 @@ namespace UTILS
                     aux = "Un Millon";
                     if (residuo > 0)
                     {
-                        aux += " " + getUnidadesMil(residuo);
+                        aux += " " + getMiles(residuo);
                     }
                 }
                 else if (num > 1000000 && num <= 999999999)
                 {
-                    aux = getUnidadesMil(num / 1000000) + " Millones";
+                    aux = getMiles(num / 1000000) + " Millones";
                     if (residuo > 0)
                     {
-                        aux += " " + getUnidadesMil(residuo);
+                        aux += " " + getMiles(residuo);
                     }
                 }
+
               
             }
             return aux;
